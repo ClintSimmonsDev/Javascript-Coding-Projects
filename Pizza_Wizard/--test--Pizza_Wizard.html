@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<script type="text/javascript"></script>
+
+<head>
+<meta charset=UTF-8 http-equiv="Content-Type" content="text/html" content="width=device-width,initial-scale=1.0" name="viewport">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="pizza_wizard.css" rel="stylesheet">
+	<title>Pizza Wizard</title>
+</head>
+
+	<body>
+		<div class="container">
+            <div id="MainTitle" text-center><h1>&#11160 &#8369&#161&#380&#380&#8371 &#8361&#161&#380&#8371r&#208 &#11162</h1></div>
+            <div class="header"><h3>The Wizard <em>already knows</em> what you're going to get...</h3></div>
+            <div class="header"><h4>But go ahead and build your dream pizza below anyway. </h4>You know... for accounting purposes.</div>
+            <div id="downArrow">&#11163</div>
+
+		<br>
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="size.jpg" alt="size">
+			<h3 class="card-title">Size</h3>
+            <div class="card-body">How powerful must your pizza be to vanquish your hunger?</div>
+            <div class="radio-inline">
+                <input class="size" type="radio" name="Size" value="Neophyte" checked=""> <strong>Neophyte</strong> -- personal<br>
+                <input class="size" type="radio" name="Size" value="Apprentice"> <strong>Apprentice</strong> ---- small<br>
+                <input class="size" type="radio" name="Size" value="Mage"> <strong>Mage</strong> ------- medium<br>
+                <input class="size" type="radio" name="Size" value="Master"> <strong>Master</strong> --------- large<br>
+                <input class="size" type="radio" name="Size" value="Imperial"> <strong>Imperial</strong> - extra large<br>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="crust.jpg" alt="crust">
+            <h3 class="card-title">Crust</h3>
+            <div class="card-body">Our crust is hand-made by Igor,<br> down in the basement... I think.</div>
+            <div class="radio-inline">
+                <input class="crust" type="radio" name="Crust" value="Beginner's Crust" checked=""> <strong>Beginner's Crust</strong><br>
+                <input class="crust" type="radio" name="Crust" value="Hand Levitated"> <strong>Hand Levitated Crust</strong><br>
+                <input class="crust" type="radio" name="Crust" value="Newt-Stuffed Crust"> <strong>Newt-Stuffed Crust</strong><br>
+                <input class="crust" type="radio" name="Crust" value="Invisible Crust"> <strong>Invisible Crust</strong><br>
+                <input class="crust" type="radio" name="Crust" value="Crystal-Infused Crust"> <strong>Crystal-Infused Crust</strong><br>
+            </div>
+        </div>
+
+        <div class="card">
+                <img class="card-img-top" src="meat.jpg" alt="meat">
+                <h3 class="card-title">Meat</h3>
+                <div class="card-body">You crave the tender meat of which fabled beast upon your pizza?</div>
+                <div class="radio-inline">
+                    <input class="meat" type="radio" name="meat" value="unicorn" checked=""> <strong>Dragon Tail</strong><br>
+                    <input class="meat" type="radio" name="meat" value="dragon"> <strong>Fresh Unicorn</strong> (seasonal)<br>
+                    <input class="meat" type="radio" name="meat" value="cyclops"> <strong>Diced Cyclops</strong><br>
+                    <input class="meat" type="radio" name="meat" value="griffin"> <strong>Griffin Wing</strong><br>
+                    <input class="meat" type="radio" name="meat" value="kraken"> <strong>Premium Kraken</strong> (extra)<br>
+                </div>
+        </div>
+    </div>
+<br>
+    <div class="card-deck">
+        <div class="card">
+                <img class="card-img-top" src="sauce.jpg" alt="sauce">
+                <h3 class="card-title">Sauce</h3>
+                <div class="card-body">Fresh from the laboratory, and mixed to ancient specifications.</div>
+                <div class="radio-inline">
+                    <input class="sauce" type="radio" name="Sauce" value="semiViscousRedPaste" checked=""> <strong>Semi-viscous Reddish Paste</strong><br>
+                    <input class="sauce" type="radio" name="Sauce" value="Pale Sauce"> <strong>Pale Sauce (pulp-free)</strong><br>
+                    <input class="sauce" type="radio" name="Sauce" value="Savory Swamp Sauce"> <strong>Savory Swamp Sauce</strong><br>
+                    <input class="sauce" type="radio" name="Sauce" value="Barbecue Bat Sauce"> <strong>Barbecue Bat Sauce</strong><br>
+                    <input class="sauce" type="radio" name="Sauce" value="Cursed Clear Sauce"> <strong>Cursed Clear Sauce</strong> <h6 id="restrictions">(restrictions apply)</h6>
+                </div>
+        </div>
+
+        <div class="card">
+                <img class="card-img-top" src="veggies.jpg" alt="veggies">
+                <h3 class="card-title">Veggies</h3>
+                <div class="card-body">The old burial grounds made for a wonderful garden spot. You'll see...</div>
+                <div class="radio-inline">
+                    <input class="veggies" type="radio" name="veggies" value="Sprig of Clover" checked=""> <strong>Sprig of Clover</strong><br>
+                    <input class="veggies" type="radio" name="veggies" value="Dried Roots"> <strong>Bitter Root</strong><br>
+                    <input class="veggies" type="radio" name="veggies" value="Sorceror's Vine"> <strong>Sorceror's Vine</strong><br>
+                    <input class="veggies" type="radio" name="veggies" value="Fractal Flower Buds"> <strong>Fractal Flower Buds</strong><br>
+                    <input class="veggies" type="radio" name="veggies" value="Random Leaves"> <strong>Random Leaves</strong><br>
+                    
+                </div>
+        </div>
+
+        <div class="card">
+                <img class="card-img-top" src="cheese.jpg" alt="cheese">
+                <h3 class="card-title">Cheese</h3>
+                <div class="card-body">Choose the cheese that you desire...</div>
+                <div class="radio-inline">
+                    <input class="cheese" type="radio" name="Cheese" value="Beginner's Crust" checked=""> <strong>Sacred Yak Cheese</strong><br>
+                    <input class="cheese" type="radio" name="Cheese" value="Hand Levitated"> <strong>Cheese of The Forbidden Goat</strong><br>
+                    <input class="cheese" type="radio" name="Cheese" value="Newt-Stuffed Crust"> <strong>Raven Cheese </strong>(shredded)<br>
+                    <input class="cheese" type="radio" name="Cheese" value="Invisible Crust"> <strong>Jeeze™ Brand Lab Cheese</strong><br>
+                    <input class="cheese" type="radio" name="Cheese" value="Crystal-Infused Crust"> <strong>Boiling Hot Nacho Liquid</strong><br>
+                </div>
+        </div>
+    </div>
+			
+
+			<div class="controls">
+				<div class="button" onclick="getReceipt()">
+					<p>Place Order</p>
+				</div>
+				<div class="button" onclick="clearAll()">
+					<p>Cancel</p>
+				</div>
+			</div>
+			<div id="cart" style="opacity: 1;">
+				<div id="title1"><h3>You Ordered:</h3></div>
+				<div id="title2"><h3>Subtotal:</h3></div>
+				<div id="showText1">Extra Large Pizza<br>Pepperoni<br>Sausage<br>Canadian Bacon<br>Ground Beef<br>Anchovy<br>Chicken<br>Tomatoes<br>Onions<br>Olives<br>Green Peppers<br>Mushrooms<br>Pineapple<br>Spinach<br>Jalapeno<br>Extra cheese<br>Barbeque sauce<br>Cheese Stuffed Crust<br></div>
+				<div id="showText2">16<br>1<br>1<br>1<br>1<br>1<br>0<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>0<br>3<br>0<br>3<br></div>
+				<div id="totalPrice1"><h3>Total Price:</h3></div>
+				<div id="totalPrice2">$34.00</div>
+			</div>
+		</div>
+		</div>
+		
+
+
+</body>
+</html>

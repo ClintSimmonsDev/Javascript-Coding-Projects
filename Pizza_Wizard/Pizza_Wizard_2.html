@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<script type="text/javascript"></script>
+
+<head>
+<meta charset=UTF-8 http-equiv="Content-Type" content="text/html" content="width=device-width,initial-scale=1.0" name="viewport">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link href="css/pizza_wizard.css" rel="stylesheet">
+	<title>Pizza Wizard</title>
+</head>
+
+	<body>
+		<div class="container">
+            <div id="MainTitle" text-center><h1>&#11160 &#8369&#161&#380&#380&#8371 &#8361&#161&#380&#8371r&#208 &#11162</h1></div>
+            <div class="header"><h3>The Wizard <em>already knows</em> what you're going to get...</h3></div>
+            <div class="header"><h4>But go ahead and build your dream pizza below anyway. </h4>You know... for accounting purposes.</div>
+            <div id="downArrow">&#11163</div>
+		
+		<br>
+    
+<form id="Menu">
+    <div class="card-deck">
+        <div class="card">
+            <img class="card-img-top" src="images/size.jpg" alt="size">
+			<h3 class="card-title">Size</h3>
+            <div class="card-body">How powerful must your pizza be to vanquish your hunger?</div>
+            <div class="radio-inline" id="size">
+                <input class="sizes" type="radio" name="Size" value="Personal" checked=""> <strong>Apprentice</strong> ---- personal<br>
+                <input class="sizes" type="radio" name="Size" value="Medium"> <strong>Mage</strong> ----------- medium<br>
+                <input class="sizes" type="radio" name="Size" value="Large"> <strong>Master</strong> ------------- large<br>
+                <input class="sizes" type="radio" name="Size" value="Extra Large"> <strong>Imperial</strong> ----- extra large<br>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img-top" src="images/crust.jpg" alt="crust">
+            <h3 class="card-title">Crust</h3>
+            <div class="card-body">Our crust is hand-made by Igor,<br> down in the basement... I think.</div>
+            <div class="radio-inline">
+                <input class="crust" type="radio" name="Crust" value="Plain Crust" checked=""> <strong>Plain Crust</strong><br>
+                <input class="crust" type="radio" name="Crust" value="Garlic Butter Crust"> <strong>Garlic Butter Crust</strong><br>
+                <input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> <strong>Cheese-Stuffed Crust</strong> ($3 extra)<br>
+                <input class="crust" type="radio" name="Crust" value="Spicy Crust"> <strong>Spicy Crust</strong><br>
+                <input class="crust" type="radio" name="Crust" value="House Special Crust"> <strong>House Special Crust</strong><br>
+            </div>
+        </div>
+
+        <div class="card">
+                <img class="card-img-top" src="images/meat.jpg" alt="meat">
+                <h3 class="card-title">Meat</h3>
+                <div class="card-body">You crave the tender meat of which fabled beast upon your pizza?</div>
+                <div class="checkbox-inline">
+                    <input class="meats" type="checkbox" name="meat" value="Pepperoni" checked=""> <strong>Pepperoni</strong><br>
+                    <input class="meats" type="checkbox" name="meat" value="Sausage"> <strong>Sausage</strong><br>
+                    <input class="meats" type="checkbox" name="meat" value="Canadian bacon"> <strong>Canadian Bacon</strong><br>
+                    <input class="meats" type="checkbox" name="meat" value="Ground beef"> <strong>Ground Beef</strong><br>
+                    <input class="meats" type="checkbox" name="meat" value="Anchovies"> <strong>Anchovies</strong><br>
+                    <input class="meats" type="checkbox" name="meat" value="Chicken"> <strong>Chicken</strong><br>
+                </div>
+        </div>
+    </div>
+  <br>
+    <div class="card-deck">
+        <div class="card">
+                <img class="card-img-top" src="images/sauce.jpg" alt="sauce">
+                <h3 class="card-title">Sauce</h3>
+                <div class="card-body">Fresh from the laboratory, and hand mixed to ancient specifications.</div>
+                <div class="radio-inline" id="sauces">
+                    <input class="sauce" type="radio" name="Sauce" value="Marinara" checked=""> <strong>Marinara</strong><br>
+                    <input class="sauce" type="radio" name="Sauce" value="White Sauce"> <strong>White</strong><br>
+                    <input class="sauce" type="radio" name="Sauce" value="Barbecue Sauce"> <strong>Barbecue</strong><br>
+                    <input class="sauce" type="radio" name="Sauce" value="None"> <strong>None</strong><br>
+                </div>
+        </div>
+
+        <div class="card">
+                <img class="card-img-top" src="images/veggies.jpg" alt="veggies">
+                <h3 class="card-title">Veggies</h3>
+                <div class="card-body">The old burial grounds made for a wonderful garden spot. You'll see...</div>
+                <div class="checkbox-inline">
+                    <input class="veggies" type="checkbox" name="veggies" value="Tomatoes" checked=""> <strong>Tomatoes</strong><br>
+                    <input class="veggies" type="checkbox" name="veggies" value="Onions"> <strong>Onions</strong><br>
+                    <input class="veggies" type="checkbox" name="veggies" value="Olives"> <strong>Olives</strong><br>
+                    <input class="veggies" type="checkbox" name="veggies" value="Green Peppers"> <strong>Green Peppers</strong><br>
+                    <input class="veggies" type="checkbox" name="veggies" value="Mushrooms"> <strong>Mushrooms</strong><br>
+                    <input class="veggies" type="checkbox" name="veggies" value="Pineapple"> <strong>Pineapple</strong><br>
+                    <input class="veggies" type="checkbox" name="veggies" value="Spinach"> <strong>Spinach</strong><br>
+                    <input class="veggies" type="checkbox" name="veggies" value="Jalapeno"> <strong>Jalapeno</strong><br>
+                </div>
+        </div>
+
+        <div class="card">
+                <img class="card-img-top" src="images/cheese.jpg" alt="cheese">
+                <h3 class="card-title">Cheese</h3>
+                <div class="card-body">This cheese is exquisite, as The Wizard has cast the <em>'perfection'</em> spell on all of it! It's mostly safe...</div>
+                <div class="radio-inline" id="cheeses">
+                    <input class="cheese" type="radio" name="Cheese" value="Regular Cheese" checked=""> <strong>Regular Cheese</strong><br>
+                    <input class="cheese" type="radio" name="Cheese" value="Extra cheese"> <strong>Extra Cheese</strong> <h6>&nbsp;&nbsp;&nbsp;&nbsp;($3 extra)</h6>
+                    <input class="cheese" type="radio" name="Cheese" value="No Cheese"> <strong>No Cheese </strong><br>
+                </div>
+        </div>
+    </div>
+</form>			
+    <br>
+			<div class="controls">
+				<div class="button" onclick="Receipt()">
+					<p>Place Order</p>
+				</div>
+				<div class="button" onclick="clearAll()">
+					<p>Cancel</p>
+				</div>
+			</div>
+			<div id="cart" style="opacity: 1;">
+				<div id="title1"><h3>Your Pizza:</h3></div>
+				<div id="title2"><h3>Subtotal:</h3></div>
+				<div id="showText1"></div>
+				<div id="showText2"></div>
+				<div id="totalPrice1"><h3>Total Price:</h3></div>
+				<div id="totalPrice2"><h3></h3></div>
+			</div>
+		</div>
+        </div>
+        <br>
+        <br>
+		
+        <script src="js/Pizza_Wizard.js"></script>
+
+</body>
+</html>
