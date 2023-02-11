@@ -1,3 +1,26 @@
+/*
+Basic cash register function that takes three arguments: the total price of the purchase, the payment, and an array containing the currencies and their total amounts in the cash drawer.
+At each step of the function, we print to the console what takes place:
+1. How much change is currently due
+2. How much we have of the largest appropriate currency to provide change
+3. What currency we give to the customer
+
+This process repeats for every paper or coin currency provided, always showing the remaining change and how we handle the next step.
+
+Once correct change is provided (or attempted), the store status is returned indicating one of three outcomes:
+'OPEN': We still have change and can continue business.
+'CLOSED': We had exactly enough money to provide change but now have $0.00 remaining.
+'INSUFFICIENT_FUNDS': We were not able to provide change
+
+This is followed by an array displaying the currencies given, and their total value per currency
+
+Example:
+{
+  status: 'OPEN',
+  change: [ [ 'TWENTY', 60 ], [ 'TEN', 20 ], [ 'QUARTER', 0.5 ] ]
+}
+*/
+
 function checkCashRegister(price, payment, drawerCash) {
 
   let registerCash = drawerCash.reverse();
