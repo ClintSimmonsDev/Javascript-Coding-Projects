@@ -1,1 +1,1 @@
-# Tech-Academy-Javascript-Coding-Projects
+# Javascript-Coding-Projects
