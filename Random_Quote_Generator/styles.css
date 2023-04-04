@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500');
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+div {
+  position: relative;
+  z-index: 2;
+}
+
+body {
+  background-color: #333;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.footer {
+  width: 450px;
+  text-align: center;
+  display: block;
+  margin: 15px auto 30px auto;
+  font-size: 0.8em;
+  color: #fff;
+}
+
+.footer a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+}
+#quote-box {
+  border-radius: 3px;
+  position: relative;
+  width: 450px;
+  padding: 40px 50px;
+  display: table;
+  background-color: #fff;
+}
+span.futuretext{
+  font-family: "Montserrat Medium";
+  max-width: 40ch;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.1, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+span.futuretext {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span.futuretext:nth-child(1) {
+  animation: fade-in 2s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.futuretext:nth-child(2) {
+  animation: fade-in 2s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.futuretext:nth-child(3) {
+  animation: fade-in 2s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span.futuretext:nth-child(4) {
+  animation: fade-in 2s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+#quote-box .quote-text {
+text-align: center;
+  width: 368px;
+  height: auto;
+  margin: auto;
+  clear: both;
+  font-weight: 500;
+  font-size: 1.4em;
+}
+
+#quote-box .quote-text i {
+  font-size: 1em;
+  margin-right: 0.4em;
+}
+
+#quote-box .quote-author {
+  width: 450px;
+  height: auto;
+  clear: both;
+  padding-top: 20px;
+  font-size: 1em;
+  text-align: center;
+}
+
+#quote-box .buttons {
+  width: 450px;
+  margin: auto;
+  display: inline-flex;
+}
+
+#quote-box .buttons .button {
+  height: 38px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #333;
+  outline: none;
+  font-size: 0.85em;
+  padding: 8px 18px 6px 18px;
+  margin-top: 30px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+#quote-box .buttons .button:hover {
+  opacity: 0.9;
+}
+
+#quote-box .buttons .button#tweet-quote {
+  padding: 0px;
+  padding-top: 8px;
+  position: absolute;
+  left: 39px;
+  text-align: center;
+  font-size: 1.2em;
+  display: inline-block;
+  margin-right: 5px;
+  height: 30px;
+  width: 40px;
+}
+
+#quote-box .buttons .button#tumblr-quote {
+padding: 0px;
+  right: 34px;
+  display: inline-block;
+  position: absolute;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 5px;
+  height: 30px;
+  width: 40px;
+}
+
+#quote-box .buttons .button#new-quote {
+margin: 0 auto;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+#futuretext {
+  font-size: 30px;
+  color: black;
+}
+img {
+width: 15rem;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+  border: 1px solid black;
+  border-radius: 5%;
+}
